@@ -2,10 +2,9 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import logo from './logo.svg';
 import './App.css';
+import { useSelector } from 'react-redux';
 
-const theme = {
-  main: 'mediumseagreen'
-};
+const theme = useSelector(state => state.theme);
 
 function App() {
   const appContent = (
