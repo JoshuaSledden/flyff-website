@@ -4,16 +4,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { applyMiddleware, createStore } from 'redux';
-import { routerMiddleware } from 'connected-react-router';
-import reducer from './reducers';
-import history from './history';
-
-const store = createStore(reducer, applyMiddleware(routerMiddleware(history)));
+import store, { history } from './store';
+import { ConnectedRouter } from 'connected-react-router';
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <ConnectedRouter history={history}>
+      <App />
+    </ConnectedRouter>
   </Provider>,
   document.getElementById('root')
 );
