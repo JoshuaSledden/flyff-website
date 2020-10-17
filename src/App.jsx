@@ -1,6 +1,5 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import './App.css';
 import { useSelector } from 'react-redux';
 
 const App = () => {
