@@ -5,5 +5,5 @@ import themeReducer from './theme';
 
 export default combineReducers({
   router: connectRouter(history),
-  theme: themeReducer
+  themeReducer
 });
