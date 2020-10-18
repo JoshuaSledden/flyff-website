@@ -6,6 +6,8 @@ import logo from '../images/logos/logo.svg';
 import AccountIcon from '../images/icons/account-icon';
 
 const Container = styled.div`
+  position: sticky;
+  z-index: 9999;
   width: 100%;
   align-items: center;
   display: flex;
@@ -89,7 +91,7 @@ const NavigationBar = () => {
   return (
     <>
       <Container>
-        <Logo src={logo} onClick={() => onClickHandle('./')} />
+        <Logo src={logo} onClick={() => onClickHandle('./', 0)} />
         <List>
           {menuItems.map((item, index) => (
             <ListItem
