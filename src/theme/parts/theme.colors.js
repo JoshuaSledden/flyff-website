@@ -8,5 +8,8 @@ export default {
     light: '#9aa5b1',
     normal: '#4b5663',
     dark: '#1a1d21'
+  },
+  background: {
+    primary: '#1c1c26'
   }
 };

@@ -13,7 +13,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: nowrap;
   top: 0;
-  background-color: black;
+  background-color: ${props => props.theme.colors.background.primary};
   opacity: 0.7;
 `;
 
