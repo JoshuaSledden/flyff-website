@@ -40,6 +40,6 @@
     ]
   },
   "devDependencies": {
-    "history": "^5.0.0"
+    "history": "^4.10.1"
   }
 }
