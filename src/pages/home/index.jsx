@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Banner from '../banner';
+import Banner from '../../components/banner';
 
 const ContentContainer = styled.div`
   background-color: ${props => props.theme.colors.background.primary};

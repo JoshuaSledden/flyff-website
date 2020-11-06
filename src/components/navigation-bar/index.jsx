@@ -77,8 +77,8 @@ const NavigationBar = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const onClickHandle = (route, key) => {
-    dispatch(replace(route));
     setSelectedIndex(key);
+    dispatch(replace(route));
   };
 
   const menuItems = [
